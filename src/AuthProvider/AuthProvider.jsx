@@ -10,7 +10,7 @@ const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true)
 
 
-  // console.log(user);
+  console.log(user);
   
 
   // Create new user

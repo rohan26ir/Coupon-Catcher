@@ -3,28 +3,17 @@ import { FaUserCircle } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
-const navUrl = (
-  <>
-    <div className="flex items-center gap-3">
-      <li>
-        <NavLink to={"/"}>Home</NavLink>
-      </li>
-      <li>
-        <NavLink to={"/"}>Details</NavLink>
-      </li>
-      <li>
-        <NavLink to={"/"}>Your Coupon</NavLink>
-      </li>
-    </div>
-  </>
-);
-
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
+  console.log("User navbar:", user);
+  // console.log("User navbar 2:", user.email);
+
+  // const { displayName, email, photoURL } = user;
+
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 px-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,14 +36,29 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              {navUrl}
-              {user ? (
+              
+              <div className="flex items-center gap-3">
+              <li>
+                <NavLink to={"/"}>Home</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/about"}>About Dev</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/contact"}>Contact</NavLink>
+              </li>
+              {user && (
                 <li>
-                  <NavLink to={"/"}>Profile</NavLink>
+                  <NavLink to={"/brands"}>Brands</NavLink>
                 </li>
-              ) : (
-                "Sign Up"
               )}
+              {user && (
+                <li>
+                  <NavLink to={"/my-profile"}>My Profile</NavLink>
+                </li>
+              )}
+            </div>
+
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl font-bold">
@@ -62,11 +66,46 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navUrl}</ul>
+          <ul className="menu menu-horizontal px-1">
+            <div className="flex items-center gap-3">
+            <li>
+                <NavLink to={"/"}>Home</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/about"}>About Dev</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/contact"}>Contact</NavLink>
+              </li>
+              {user && (
+                <li>
+                  <NavLink to={"/brands"}>Brands</NavLink>
+                </li>
+              )}
+              {user && (
+                <li>
+                  <NavLink to={"/my-profile"}>My Profile</NavLink>
+                </li>
+              )}
+            </div>
+          </ul>
         </div>
         <div className="navbar-end items-center gap-2">
+          <div className="font-bold">{user && user.email}</div>
           <div>
-            <FaUserCircle className="text-3xl"></FaUserCircle>
+            {!user ? (
+              <FaUserCircle className="text-3xl"></FaUserCircle>
+            ) : (
+              <img
+                className="h-10 w-10 rounded-full"
+                src={user.photoURL}
+                alt=""
+              />
+            )}
+          </div>
+
+          <div>
+            {/* { user && user.email? " hello" : <p>{user.displayName}</p> } */}
           </div>
 
           {user ? (

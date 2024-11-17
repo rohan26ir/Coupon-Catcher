@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import Profile from '../Account/Profile/Profile';
 
 const AuthLayout = () => {
   return (
@@ -9,7 +10,7 @@ const AuthLayout = () => {
         <Navbar></Navbar>
       </header>
       <main>
-        <Outlet></Outlet>
+        <Profile></Profile>
       </main>
     </div>
   );

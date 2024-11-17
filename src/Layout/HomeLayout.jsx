@@ -1,18 +1,20 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Text from "../Pages/Text";
+
 
 const HomeLayout = () => {
   return (
     <div>
-       <header>
-         <Navbar></Navbar>
-       </header>
-       <main>
+      
+      <div>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
+      <p>home page</p>
 
-       </main>
-       <footer>
-         <Footer></Footer>
-       </footer>
+      <br />
+      <br />
+      </div>
+
     </div>
   );
 };

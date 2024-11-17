@@ -1,13 +1,14 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
 
   const [showPassword, setShowPassword] =useState(false)
   const {logIn, setUser} = useContext(AuthContext)
 
-  const location = useLocation()
+  const location = useLocation();
   const navigate = useNavigate()
 
 
@@ -28,6 +29,14 @@ const Login = () => {
 
       setUser(user)
       navigate(location?.state ? location.state : '/')
+      
+       Swal.fire({
+        position: "top-center",
+        icon: "success",
+        title: `${user.email}`,
+        showConfirmButton: false,
+        timer: 1500
+      });
     })
     .catch(error => {
       alert(error.code)
