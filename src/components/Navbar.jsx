@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 px-5">
+      <div className="navbar bg-[#B2D9EA] px-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,46 +36,43 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              
-              <div className="flex items-center gap-3">
-              <li>
-                <NavLink to={"/"}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/about"}>About Dev</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/contact"}>Contact</NavLink>
-              </li>
-              {user && (
+              <div className="flex items-center md:gap-3">
                 <li>
-                  <NavLink to={"/brands"}>Brands</NavLink>
+                  <NavLink to={"/"}>Home</NavLink>
                 </li>
-              )}
-              {user && (
                 <li>
-                  <NavLink to={"/my-profile"}>My Profile</NavLink>
+                  <NavLink to={"/about"}>About Dev</NavLink>
                 </li>
-              )}
-            </div>
-
+                <li>
+                  <NavLink to={"/contact"}>Contact</NavLink>
+                </li>
+                {user && (
+                  <li>
+                    <NavLink to={"/brands"}>Brands</NavLink>
+                  </li>
+                )}
+                {user && (
+                  <li>
+                    <NavLink to={"/my-profile"}>My Profile</NavLink>
+                  </li>
+                )}
+              </div>
             </ul>
           </div>
-          <Link to="/" className="btn btn-ghost text-xl font-bold">
+          <Link to="/" className="flex text-xl font-bold ">
             Coupon Catcher
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <div className="flex items-center gap-3">
-            <li>
-                <NavLink to={"/"}>Home</NavLink>
-              </li>
+              {user && (
+                <li>
+                  <NavLink to={"/"}>Home</NavLink>
+                </li>
+              )}
               <li>
                 <NavLink to={"/about"}>About Dev</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/contact"}>Contact</NavLink>
               </li>
               {user && (
                 <li>
@@ -91,7 +88,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end items-center gap-2">
-          <div className="font-bold">{user && user.email}</div>
+          <div className="font-bold hidden md:block">{user && user.email}</div>
           <div>
             {!user ? (
               <FaUserCircle className="text-3xl"></FaUserCircle>

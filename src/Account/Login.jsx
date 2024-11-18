@@ -28,15 +28,18 @@ const Login = () => {
       // console.log("Login:::", user);
 
       setUser(user)
-      navigate(location?.state ? location.state : '/')
+      // navigate(location?.state ? location.state : '/')
       
        Swal.fire({
         position: "top-center",
         icon: "success",
-        title: `${user.email}`,
+        title: `Welcome, ${user.displayName || 'Rohan'}!`,
         showConfirmButton: false,
         timer: 1500
       });
+      setTimeout(() => {
+        navigate(location?.state ? location.state : '/');
+      }, 1600);
     })
     .catch(error => {
       alert(error.code)

@@ -5,10 +5,8 @@ import Login from '../Account/Login';
 import Register from '../Account/Register';
 import AuthLayout from '../Layout/AuthLayout';
 import Profile from '../Account/Profile/Profile';
-import Details from '../Pages/Details/About';
 import MainLayout from '../Layout/MainLayout';
-import About from '../Pages/Details/About';
-import Contact from '../Pages/Contact';
+import About from '../Pages/About';
 
 const Routes = createBrowserRouter([
   {
@@ -24,23 +22,19 @@ const Routes = createBrowserRouter([
         element: <About></About>
       },
       {
-        path: '/contact',
-        element: <Contact></Contact>
-      },
-      {
         path: '/profile',
-        element: <Profile></Profile>
+        element: <Profile></Profile>,
       },
     ]
+  },
+  {
+    path: 'my-profile',
+    element: <Profile></Profile>
   },
   {
     path: '',
     element: <AuthLayout></AuthLayout>,
     children: [
-      {
-        path: '/my-profile',
-        element: <Profile></Profile>
-      },
       {
         path: '/login',
         element: <Login></Login>

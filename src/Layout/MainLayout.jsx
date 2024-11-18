@@ -9,10 +9,8 @@ const MainLayout = () => {
       
       <header>
          <Navbar></Navbar>
-         <Banner></Banner>
        </header>
        <main>
-        <p>Hello welcome to Main Layout page</p>
          <Outlet></Outlet>
        </main>
        <footer>

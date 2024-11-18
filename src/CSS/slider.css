@@ -1,0 +1,44 @@
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.mySwiper {
+  height: 400px;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background: #007bff;
+  opacity: 1;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: #333;
+}
+
+.autoplay-progress {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.autoplay-progress svg {
+  transform: rotate(-90deg);
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.3);
+  stroke-width: 4;
+  stroke-dasharray: 126;
+  stroke-dashoffset: calc(var(--progress, 1) * 126);
+  transition: stroke-dashoffset 0.2s linear;
+}
+
+.autoplay-progress circle {
+  stroke: #007bff;
+}

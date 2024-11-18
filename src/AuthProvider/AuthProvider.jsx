@@ -20,11 +20,18 @@ const AuthProvider = ({ children }) => {
     return createUserWithEmailAndPassword(auth, name, photoUrl, email , password)
   }
 
-  // Sign out
-  const logOut = () =>{
-    setLoading(true)
-    return signOut(auth)
-  }
+  const logOut = () => {
+    setLoading(true);
+    return signOut(auth).then(() => {
+      // Redirect after successful logout
+      navigate(location?.state ? location.state : '/about');
+    })
+      .catch((error) => {
+      console.error('Sign-out error:', error);
+    })
+  };
+
+
   // sign in
   const logIn = (email, password) =>{
     setLoading(true)
@@ -33,7 +40,6 @@ const AuthProvider = ({ children }) => {
 
   // Update user profile
   const updateUserProfile = (updatedData) => {
-
     return updateProfile(auth.currentUser, updatedData)
   }
 
