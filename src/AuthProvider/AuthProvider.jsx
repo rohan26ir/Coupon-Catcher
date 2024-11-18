@@ -8,6 +8,7 @@ const AuthProvider = ({ children }) => {
 
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [message, setMessage] = useState('');
 
 
   console.log(user);
@@ -52,6 +53,8 @@ const AuthProvider = ({ children }) => {
     logIn,
     loading,
     updateUserProfile,
+    message,
+    setMessage,
   }
 
 

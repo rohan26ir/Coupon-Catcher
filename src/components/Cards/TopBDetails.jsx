@@ -50,7 +50,7 @@ const TopBDetails = () => {
 
   return (
     <div>
-      <div className="flex items-end gap-4">
+      <div className="flex gap-20 items-end ">
         {brandData.map((brand) => (
           <div
             key={brand.id}

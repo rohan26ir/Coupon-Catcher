@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
-import { FaUserCircle } from "react-icons/fa";
+import { FaHome, FaUserCircle } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import { FcAbout } from "react-icons/fc";
+import { SiBrandfolder } from "react-icons/si";
+import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -38,22 +41,22 @@ const Navbar = () => {
             >
               <div className="flex items-center md:gap-3">
                 <li>
-                  <NavLink to={"/"}>Home</NavLink>
+                  <NavLink to={"/"}><FaHome></FaHome> Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/about"}>About Dev</NavLink>
+                  <NavLink to={"/about"}><FcAbout></FcAbout> About Dev</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/contact"}>Contact</NavLink>
                 </li>
                 {user && (
                   <li>
-                    <NavLink to={"/brands"}>Brands</NavLink>
+                    <NavLink to={"/brands"}><SiBrandfolder></SiBrandfolder> Brands</NavLink>
                   </li>
                 )}
                 {user && (
                   <li>
-                    <NavLink to={"/my-profile"}>My Profile</NavLink>
+                    <NavLink to={"/my-profile"}><CgProfile></CgProfile> My Profile</NavLink>
                   </li>
                 )}
               </div>
@@ -68,20 +71,20 @@ const Navbar = () => {
             <div className="flex items-center gap-3">
               {user && (
                 <li>
-                  <NavLink to={"/"}>Home</NavLink>
+                  <NavLink to={"/"}> <FaHome></FaHome>Home</NavLink>
                 </li>
               )}
               <li>
-                <NavLink to={"/about"}>About Dev</NavLink>
+                <NavLink to={"/about"}><FcAbout></FcAbout> About Dev</NavLink>
               </li>
               {user && (
                 <li>
-                  <NavLink to={"/brands"}>Brands</NavLink>
+                  <NavLink to={"/brands"}><SiBrandfolder></SiBrandfolder> Brands</NavLink>
                 </li>
               )}
               {user && (
                 <li>
-                  <NavLink to={"/my-profile"}>My Profile</NavLink>
+                  <NavLink to={"/my-profile"}><CgProfile></CgProfile> My Profile</NavLink>
                 </li>
               )}
             </div>
@@ -110,7 +113,7 @@ const Navbar = () => {
               Log Out
             </button>
           ) : (
-            <Link to={"login"}>
+            <Link to={"/login"}>
               <button className="px-5 py-1 bg-gray-500">Log in</button>
             </Link>
           )}

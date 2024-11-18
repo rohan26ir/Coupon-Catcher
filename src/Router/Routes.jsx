@@ -4,9 +4,12 @@ import HomeLayout from '../Layout/HomeLayout';
 import Login from '../Account/Login';
 import Register from '../Account/Register';
 import AuthLayout from '../Layout/AuthLayout';
-import Profile from '../Account/Profile/Profile';
 import MainLayout from '../Layout/MainLayout';
 import About from '../Pages/About';
+import Brands from '../Pages/Brands/Brands';
+import ProfileLayout from '../Layout/ProfileLayout';
+import Profile from '../Pages/Profile';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 const Routes = createBrowserRouter([
   {
@@ -14,38 +17,49 @@ const Routes = createBrowserRouter([
     element: <MainLayout></MainLayout>,
     children: [
       {
-        path: '/',
-        element: <HomeLayout></HomeLayout>
+        path: '/', 
+        element: (
+          <PrivateRoute><HomeLayout></HomeLayout></PrivateRoute>
+        ) // Protected
       },
       {
         path: '/about',
-        element: <About></About>
+        element: <About></About> // Unprotected
       },
       {
-        path: '/profile',
-        element: <Profile></Profile>,
+        path: '/my-profile',
+        element: (
+          <PrivateRoute><ProfileLayout></ProfileLayout></PrivateRoute>
+        ) // Protected
       },
+      {
+        path: '/brands',
+        element: (
+          <PrivateRoute><Brands></Brands></PrivateRoute>
+        ) // Protected
+      }
     ]
   },
   {
-    path: 'my-profile',
-    element: <Profile></Profile>
+    path: '/profile',
+    element: (
+      <PrivateRoute><Profile></Profile></PrivateRoute>
+    ) // Protected
   },
   {
     path: '',
     element: <AuthLayout></AuthLayout>,
     children: [
       {
-        path: '/login',
-        element: <Login></Login>
+        path: 'login',
+        element: <Login></Login> // Unprotected
       },
       {
-        path: '/register',
+        path: 'register',
         element: <Register></Register>
       }
     ]
   }
-])
- 
+]);
 
 export default Routes;

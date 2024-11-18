@@ -1,7 +1,7 @@
 import React from "react";
-import card1 from "../.././assets/card/HC 01.webp";
-import card2 from "../.././assets/card/HC 2.webp";
-import card3 from "../.././assets/card/HC 3.webp";
+import card1 from "../.././assets/HC 01.webp";
+import card2 from "../.././assets/HC 2.webp";
+import card3 from "../.././assets/HC 3.webp";
 
 const HomeCard = () => {
   return (

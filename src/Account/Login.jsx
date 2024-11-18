@@ -84,7 +84,8 @@ const Login = () => {
           <button className="btn btn-neutral rounded-none">Login</button>
         </div>
 
-        <p className='text-sm text-center py-3'>Dont’t Have An Account ? <Link to={'/register'}><span className='text-red-600'>Register</span></Link></p>
+        <p className='text-sm text-center py-3'>Dont’t Have An Account ? 
+          <Link to={'/register'}><span className='text-red-600'>Register</span></Link></p>
       </form>
     </div>
     </div>

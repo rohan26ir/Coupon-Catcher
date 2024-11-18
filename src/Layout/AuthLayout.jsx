@@ -1,7 +1,7 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Profile from '../Account/Profile/Profile';
+// import Login from '../Account/Login';
+import { Outlet } from 'react-router-dom';
 
 const AuthLayout = () => {
   return (
@@ -10,7 +10,9 @@ const AuthLayout = () => {
         <Navbar></Navbar>
       </header>
       <main>
-        <Profile></Profile>
+        {/* <Login></Login> */}
+
+        <Outlet></Outlet>
       </main>
     </div>
   );
