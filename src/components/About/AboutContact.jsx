@@ -13,8 +13,8 @@ const AboutContact = () => {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-2 items-center md:gap-10">
         {/* Left Section with Fade-in Animation */}
         <div className="md:col-span-2" data-aos="fade-right">
-          <h1 className="text-3xl font-bold text-gray-200">Contact.</h1>
-          <p className="text-gray-400 py-3">
+          <h1 className="text-3xl font-bold text-[#133E87]">Contact.</h1>
+          <p className="text-gray-700 py-3">
             Are you working on something great? I would love to help make it
             happen! Drop me a letter and start your project right now! Just do
             it.

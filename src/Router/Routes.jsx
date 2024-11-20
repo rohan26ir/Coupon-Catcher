@@ -10,53 +10,59 @@ import Brands from '../Pages/Brands/Brands';
 import ProfileLayout from '../Layout/ProfileLayout';
 import Profile from '../Pages/Profile';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import UpdateProfile from '../Pages/UpdateProfile';
+import BrandDetails from '../Pages/Brands/BrandDetails';
 
 const Routes = createBrowserRouter([
   {
     path: '/',
-    element: <MainLayout></MainLayout>,
+    element: <MainLayout />,
     children: [
       {
-        path: '/', 
-        element: (
-          <PrivateRoute><HomeLayout></HomeLayout></PrivateRoute>
-        ) // Protected
+        path: '/',
+        element: <PrivateRoute><HomeLayout /></PrivateRoute> // Protected
       },
       {
         path: '/about',
-        element: <About></About> // Unprotected
+        element: <About /> // Unprotected
       },
       {
         path: '/my-profile',
-        element: (
-          <PrivateRoute><ProfileLayout></ProfileLayout></PrivateRoute>
-        ) // Protected
+        element: <PrivateRoute><ProfileLayout /></PrivateRoute> // Protected
       },
       {
         path: '/brands',
-        element: (
-          <PrivateRoute><Brands></Brands></PrivateRoute>
-        ) // Protected
+        element: <PrivateRoute><Brands /></PrivateRoute>,
+      },
+      {
+        path: '/brand-details/:id', // New Route for BrandDetails
+        element: <PrivateRoute><BrandDetails /></PrivateRoute>,
+        loader: ({ params }) =>
+          fetch(`/public/coupon.json`)  // Fetch the entire coupon.json file
+            .then((res) => res.json())  // Convert the response to JSON
+            .then((data) => data.find((brand) => brand._id === params.id))  // Find the brand by _id
       }
     ]
   },
   {
     path: '/profile',
-    element: (
-      <PrivateRoute><Profile></Profile></PrivateRoute>
-    ) // Protected
+    element: <PrivateRoute><Profile /></PrivateRoute>
+  },
+  {
+    path: '/update-profile',
+    element: <UpdateProfile />
   },
   {
     path: '',
-    element: <AuthLayout></AuthLayout>,
+    element: <AuthLayout />,
     children: [
       {
         path: 'login',
-        element: <Login></Login> // Unprotected
+        element: <Login /> // Unprotected
       },
       {
         path: 'register',
-        element: <Register></Register>
+        element: <Register />
       }
     ]
   }

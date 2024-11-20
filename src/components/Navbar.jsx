@@ -9,7 +9,7 @@ import { CgProfile } from "react-icons/cg";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
-  console.log("User navbar:", user);
+  // console.log("User navbar:", user);
   // console.log("User navbar 2:", user.email);
 
   // const { displayName, email, photoURL } = user;

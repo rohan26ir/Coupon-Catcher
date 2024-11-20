@@ -16,17 +16,17 @@ const AboutHero = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         {/* Left Section */}
         <div data-aos='fade-right'>
-          <h2 className='text-4xl font-bold text-gray-200'>I am Rohan</h2>
-          <p className='text-xl text-gray-300 my-8'>
+          <h2 className='text-4xl font-bold text-[#133E87] '>I am Rohan</h2>
+          <p className='text-xl text-gray-700 my-8'>
             I am a Web Developer from Dhaka, Bangladesh. I am working to improve my web design and development skills. I enjoy creating websites and learning new things about technology. I want to take on more projects to gain experience, learn more, and grow as a developer.
           </p>
 
-          <div className='text-gray-300 text-base space-y-2'>
+          <div className='text-gray-700 text-base space-y-2'>
             <p>Phone: 01869396022</p>
             <p>Email: rohan26ir@gmail.com</p>
             <p>Address: Savar, Dhaka, Bangladesh</p>
-            <div className='flex text-gray-100'>
-              <div className='mr-2'>Social:</div>
+            <div className='flex text-rose-600'>
+              <div className='mr-2 text-[#133E87] font-bold'>Social:</div>
               <div className='flex justify-center items-center gap-3 cursor-pointer'>
                 <a href="https://www.facebook.com/rohan26ir/" target="_blank" rel="noopener noreferrer">
                   <p><FaFacebook /></p>

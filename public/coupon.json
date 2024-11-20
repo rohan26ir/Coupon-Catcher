@@ -1,0 +1,282 @@
+[
+  {
+    "_id": "001",
+    "brand_name": "TechGizmo",
+    "rating": 4.5,
+    "description": "Your one-stop shop for the latest tech gadgets. From smartphones to smart homes, discover innovative technology designed to simplify your life. Experience the future of electronics with unbeatable deals.",
+    "brand_logo": "https://example.com/logos/techgizmo.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "TECH10",
+        "description": "10% off on all electronics",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of $100",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on all orders",
+        "expiry_date": "2025-01-15",
+        "condition": "No minimum purchase",
+        "coupon_type": "Free Shipping"
+      }
+    ],
+    "shop_Link": "https://www.techgizmo.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "002",
+    "brand_name": "FashionFix",
+    "rating": 4.8,
+    "description": "Trendy and affordable fashion for all seasons. Stay stylish with our wide selection of clothing for men, women, and kids. Explore the latest collections tailored for every occasion.",
+    "brand_logo": "https://example.com/logos/fashionfix.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "STYLE20",
+        "description": "20% off on new arrivals",
+        "expiry_date": "2024-11-30",
+        "condition": "Applicable on new arrivals only",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "WINTER30",
+        "description": "30% off on winter wear",
+        "expiry_date": "2025-02-28",
+        "condition": "Selected items only",
+        "coupon_type": "Percentage"
+      }
+    ],
+    "shop_Link": "https://www.fashionfix.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": "003",
+    "brand_name": "GourmetGlide",
+    "rating": 4.2,
+    "description": "Premium quality groceries delivered to your doorstep. Choose from an extensive range of organic, fresh, and specialty items. Convenience and quality you can trust for your daily needs.",
+    "brand_logo": "https://example.com/logos/gourmetglide.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "SAVE5",
+        "description": "$5 off on your first order",
+        "expiry_date": "2024-12-31",
+        "condition": "First-time users only",
+        "coupon_type": "Flat Discount"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "ORGANIC15",
+        "description": "15% off on organic products",
+        "expiry_date": "2025-03-31",
+        "condition": "Applicable on organic category only",
+        "coupon_type": "Percentage"
+      }
+    ],
+    "shop_Link": "https://www.gourmetglide.com",
+    "category": "Groceries",
+    "isSaleOn": false
+  },
+  {
+    "_id": "004",
+    "brand_name": "BookHaven",
+    "rating": 4.7,
+    "description": "Dive into the world of books and stories. Whether you love fiction, non-fiction, or children's tales, we have something for every reader. Your ultimate destination for literary adventures.",
+    "brand_logo": "https://example.com/logos/bookhaven.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "READ10",
+        "description": "10% off on all books",
+        "expiry_date": "2024-12-25",
+        "condition": "No minimum purchase",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "FREEREAD",
+        "description": "Free bookmark with every purchase",
+        "expiry_date": "2025-01-10",
+        "condition": "While supplies last",
+        "coupon_type": "Gift"
+      }
+    ],
+    "shop_Link": "https://www.bookhaven.com",
+    "category": "Books",
+    "isSaleOn": true
+  },
+  {
+    "_id": "005",
+    "brand_name": "HomeStyle",
+    "rating": 4.3,
+    "description": "Stylish home decor and furniture for your perfect space. From modern designs to timeless classics, find everything to elevate your home's style. Quality products crafted to create comfort and elegance.",
+    "brand_logo": "https://example.com/logos/homestyle.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "HOME20",
+        "description": "20% off on furniture",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of $200",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "DECOR10",
+        "description": "10% off on home decor",
+        "expiry_date": "2025-01-15",
+        "condition": "Selected items only",
+        "coupon_type": "Percentage"
+      }
+    ],
+    "shop_Link": "https://www.homestyle.com",
+    "category": "Home Decor",
+    "isSaleOn": false
+  },
+  {
+    "_id": "006",
+    "brand_name": "PetPalace",
+    "rating": 4.9,
+    "description": "Everything you need for your furry friends. From pet food to toys and accessories, we’ve got it all. Treat your pets with love and care with our premium products.",
+    "brand_logo": "https://example.com/logos/petpalace.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "PETLOVE",
+        "description": "15% off on all pet supplies",
+        "expiry_date": "2025-02-28",
+        "condition": "No minimum purchase",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "FREECHEW",
+        "description": "Free chew toy with every order",
+        "expiry_date": "2025-01-31",
+        "condition": "Minimum purchase of $50",
+        "coupon_type": "Gift"
+      }
+    ],
+    "shop_Link": "https://www.petpalace.com",
+    "category": "Pet Supplies",
+    "isSaleOn": true
+  },
+  {
+    "_id": "007",
+    "brand_name": "BeautyBliss",
+    "rating": 4.6,
+    "description": "Enhance your beauty with our premium products. Explore a wide range of skincare, makeup, and beauty essentials. Feel confident and radiant every day with BeautyBliss.",
+    "brand_logo": "https://example.com/logos/beautybliss.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "GLOW25",
+        "description": "25% off on skincare products",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "LIPFREE",
+        "description": "Free lipstick with orders over $100",
+        "expiry_date": "2025-03-01",
+        "condition": "Minimum purchase required",
+        "coupon_type": "Gift"
+      }
+    ],
+    "shop_Link": "https://www.beautybliss.com",
+    "category": "Beauty",
+    "isSaleOn": true
+  },
+  {
+    "_id": "008",
+    "brand_name": "FitGear",
+    "rating": 4.5,
+    "description": "Top-notch fitness gear for your active lifestyle. From gym equipment to apparel, find everything to support your fitness journey. Designed for durability and performance to help you excel.",
+    "brand_logo": "https://example.com/logos/fitgear.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "GYM10",
+        "description": "10% off on gym equipment",
+        "expiry_date": "2025-01-31",
+        "condition": "Minimum purchase of $50",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "FITBAG",
+        "description": "Free gym bag with every purchase",
+        "expiry_date": "2025-02-15",
+        "condition": "Limited stock",
+        "coupon_type": "Gift"
+      }
+    ],
+    "shop_Link": "https://www.fitgear.com",
+    "category": "Fitness",
+    "isSaleOn": false
+  },
+  {
+    "_id": "009",
+    "brand_name": "ToyWonder",
+    "rating": 4.8,
+    "description": "Discover the joy of play with our wide selection of toys for kids of all ages. From educational kits to fun games, inspire creativity and learning in every child.",
+    "brand_logo": "https://example.com/logos/toywonder.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "PLAY20",
+        "description": "20% off on all toys",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "FREEFUN",
+        "description": "Free puzzle with every order",
+        "expiry_date": "2025-01-30",
+        "condition": "While supplies last",
+        "coupon_type": "Gift"
+      }
+    ],
+    "shop_Link": "https://www.toywonder.com",
+    "category": "Toys",
+    "isSaleOn": true
+  },
+  {
+    "_id": "010",
+    "brand_name": "TravelTrek",
+    "rating": 4.4,
+    "description": "Gear up for your adventures with our travel essentials. From durable luggage to handy accessories, we make every journey seamless and stylish. Explore the world with confidence.",
+    "brand_logo": "https://example.com/logos/traveltrek.png",
+    "coupons": [
+      {
+        "coupon_number": "1",
+        "coupon_code": "TRIP15",
+        "description": "15% off on travel bags",
+        "expiry_date": "2024-12-31",
+        "condition": "Selected items only",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_number": "2",
+        "coupon_code": "FREELOCK",
+        "description": "Free luggage lock with orders over $200",
+        "expiry_date": "2025-02-28",
+        "condition": "Minimum purchase required",
+        "coupon_type": "Gift"
+      }
+    ],
+    "shop_Link": "https://www.traveltrek.com",
+    "category": "Travel",
+    "isSaleOn": false
+  }
+]

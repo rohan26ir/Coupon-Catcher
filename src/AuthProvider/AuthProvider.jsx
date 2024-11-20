@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
   const [message, setMessage] = useState('');
 
 
-  console.log(user);
+  // console.log(user);
   
 
   // Create new user
