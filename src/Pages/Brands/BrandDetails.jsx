@@ -16,15 +16,15 @@ const BrandDetails = () => {
 
   return (
     <div className="w-11/12 my-5 mx-auto border-2 rounded-2xl">
-      <h1>{_id}</h1>
       <div className=" p-5 my-5 rounded-2xl  bg-white">
-        <div className="flex justify-center items-center my-2">
+        <div className="flex justify-center items-center my-2 mx-auto w-[80%]">
           <img
-            className=""
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            className="h-40 "
+            src={brand_logo}
             alt=""
           />
         </div>
+        <div className="divider w-[80%] mx-auto"></div>
         <div className="flex justify-around  md:text-3xl font-bold">
           <div className="">
             <h1>{brand_name}</h1>

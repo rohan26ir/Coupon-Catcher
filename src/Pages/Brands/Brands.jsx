@@ -6,7 +6,7 @@ const Brands = () => {
   const [brands, setBrands] = useState([])
   
   useEffect(() => {
-    fetch("/public/coupon.json")
+    fetch("./coupon.json")
     .then(res => res.json())
     .then(data => setBrands(data))
     .catch(error => (error))

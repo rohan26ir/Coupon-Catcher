@@ -12,11 +12,13 @@ import Profile from '../Pages/Profile';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import UpdateProfile from '../Pages/UpdateProfile';
 import BrandDetails from '../Pages/Brands/BrandDetails';
+import ErrorPage from '../Pages/ErrorPage';
 
 const Routes = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -38,9 +40,9 @@ const Routes = createBrowserRouter([
         path: '/brand-details/:id', // New Route for BrandDetails
         element: <PrivateRoute><BrandDetails /></PrivateRoute>,
         loader: ({ params }) =>
-          fetch(`/public/coupon.json`)  // Fetch the entire coupon.json file
-            .then((res) => res.json())  // Convert the response to JSON
-            .then((data) => data.find((brand) => brand._id === params.id))  // Find the brand by _id
+          fetch(`./coupon.json`) 
+            .then((res) => res.json())
+            .then((data) => data.find((brand) => brand._id === params.id)) 
       }
     ]
   },

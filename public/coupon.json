@@ -1,10 +1,10 @@
 [
   {
     "_id": "001",
-    "brand_name": "TechGizmo",
+    "brand_name": "Apple",
     "rating": 4.5,
     "description": "Your one-stop shop for the latest tech gadgets. From smartphones to smart homes, discover innovative technology designed to simplify your life. Experience the future of electronics with unbeatable deals.",
-    "brand_logo": "https://example.com/logos/techgizmo.png",
+    "brand_logo": "https://i.ibb.co.com/Kh94GFn/apple.png",
     "coupons": [
       {
         "coupon_number": "1",
@@ -23,16 +23,16 @@
         "coupon_type": "Free Shipping"
       }
     ],
-    "shop_Link": "https://www.techgizmo.com",
+    "shop_Link": "https://www.apple.com/",
     "category": "Electronics",
     "isSaleOn": true
   },
-  {
+  { 
     "_id": "002",
-    "brand_name": "FashionFix",
+    "brand_name": "Sailor",
     "rating": 4.8,
     "description": "Trendy and affordable fashion for all seasons. Stay stylish with our wide selection of clothing for men, women, and kids. Explore the latest collections tailored for every occasion.",
-    "brand_logo": "https://example.com/logos/fashionfix.png",
+    "brand_logo": "https://i.ibb.co.com/LtZGpq9/sailor.png",
     "coupons": [
       {
         "coupon_number": "1",
@@ -51,16 +51,16 @@
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://www.fashionfix.com",
+    "shop_Link": "https://www.sailor.clothing/",
     "category": "Clothing",
     "isSaleOn": true
   },
   {
     "_id": "003",
-    "brand_name": "GourmetGlide",
+    "brand_name": "Shwapno",
     "rating": 4.2,
     "description": "Premium quality groceries delivered to your doorstep. Choose from an extensive range of organic, fresh, and specialty items. Convenience and quality you can trust for your daily needs.",
-    "brand_logo": "https://example.com/logos/gourmetglide.png",
+    "brand_logo": "https://i.ibb.co.com/f2gtNbV/shwapno.png",
     "coupons": [
       {
         "coupon_number": "1",
@@ -79,16 +79,16 @@
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://www.gourmetglide.com",
+    "shop_Link": "https://www.shwapno.com/",
     "category": "Groceries",
     "isSaleOn": false
   },
   {
     "_id": "004",
-    "brand_name": "BookHaven",
+    "brand_name": "Rokomari",
     "rating": 4.7,
     "description": "Dive into the world of books and stories. Whether you love fiction, non-fiction, or children's tales, we have something for every reader. Your ultimate destination for literary adventures.",
-    "brand_logo": "https://example.com/logos/bookhaven.png",
+    "brand_logo": "https://i.ibb.co.com/B2ssxtY/rokomari.jpg",
     "coupons": [
       {
         "coupon_number": "1",
@@ -107,16 +107,16 @@
         "coupon_type": "Gift"
       }
     ],
-    "shop_Link": "https://www.bookhaven.com",
+    "shop_Link": "https://www.rokomari.com/book",
     "category": "Books",
     "isSaleOn": true
   },
   {
     "_id": "005",
-    "brand_name": "HomeStyle",
+    "brand_name": "Homestyler",
     "rating": 4.3,
     "description": "Stylish home decor and furniture for your perfect space. From modern designs to timeless classics, find everything to elevate your home's style. Quality products crafted to create comfort and elegance.",
-    "brand_logo": "https://example.com/logos/homestyle.png",
+    "brand_logo": "https://i.ibb.co.com/80pLycB/homestyler.jpg",
     "coupons": [
       {
         "coupon_number": "1",
@@ -135,16 +135,16 @@
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://www.homestyle.com",
+    "shop_Link": "https://www.homestyler.com/",
     "category": "Home Decor",
     "isSaleOn": false
   },
   {
     "_id": "006",
-    "brand_name": "PetPalace",
+    "brand_name": "Petpalace Resort",
     "rating": 4.9,
     "description": "Everything you need for your furry friends. From pet food to toys and accessories, we’ve got it all. Treat your pets with love and care with our premium products.",
-    "brand_logo": "https://example.com/logos/petpalace.png",
+    "brand_logo": "https://i.ibb.co.com/YRJ0B60/petpalaceresort.jpg",
     "coupons": [
       {
         "coupon_number": "1",
@@ -163,7 +163,7 @@
         "coupon_type": "Gift"
       }
     ],
-    "shop_Link": "https://www.petpalace.com",
+    "shop_Link": "https://www.petpalaceresort.com/",
     "category": "Pet Supplies",
     "isSaleOn": true
   },
@@ -172,7 +172,7 @@
     "brand_name": "BeautyBliss",
     "rating": 4.6,
     "description": "Enhance your beauty with our premium products. Explore a wide range of skincare, makeup, and beauty essentials. Feel confident and radiant every day with BeautyBliss.",
-    "brand_logo": "https://example.com/logos/beautybliss.png",
+    "brand_logo": "https://i.ibb.co.com/LQJNrfg/beautybliss.png",
     "coupons": [
       {
         "coupon_number": "1",
@@ -191,7 +191,7 @@
         "coupon_type": "Gift"
       }
     ],
-    "shop_Link": "https://www.beautybliss.com",
+    "shop_Link": "https://beautybliss.co.nz/",
     "category": "Beauty",
     "isSaleOn": true
   },
@@ -200,7 +200,7 @@
     "brand_name": "FitGear",
     "rating": 4.5,
     "description": "Top-notch fitness gear for your active lifestyle. From gym equipment to apparel, find everything to support your fitness journey. Designed for durability and performance to help you excel.",
-    "brand_logo": "https://example.com/logos/fitgear.png",
+    "brand_logo": "https://i.ibb.co.com/pLKYvpY/shopfitgear.webp",
     "coupons": [
       {
         "coupon_number": "1",
@@ -219,7 +219,7 @@
         "coupon_type": "Gift"
       }
     ],
-    "shop_Link": "https://www.fitgear.com",
+    "shop_Link": "https://shopfitgear.com/",
     "category": "Fitness",
     "isSaleOn": false
   },
@@ -228,7 +228,7 @@
     "brand_name": "ToyWonder",
     "rating": 4.8,
     "description": "Discover the joy of play with our wide selection of toys for kids of all ages. From educational kits to fun games, inspire creativity and learning in every child.",
-    "brand_logo": "https://example.com/logos/toywonder.png",
+    "brand_logo": "https://i.ibb.co.com/0YwqzqN/toywonder.png",
     "coupons": [
       {
         "coupon_number": "1",
@@ -247,7 +247,7 @@
         "coupon_type": "Gift"
       }
     ],
-    "shop_Link": "https://www.toywonder.com",
+    "shop_Link": "https://toywonder.com.au/",
     "category": "Toys",
     "isSaleOn": true
   },
@@ -256,7 +256,7 @@
     "brand_name": "TravelTrek",
     "rating": 4.4,
     "description": "Gear up for your adventures with our travel essentials. From durable luggage to handy accessories, we make every journey seamless and stylish. Explore the world with confidence.",
-    "brand_logo": "https://example.com/logos/traveltrek.png",
+    "brand_logo": "https://i.ibb.co.com/K2drgRW/traveltrek.png",
     "coupons": [
       {
         "coupon_number": "1",
@@ -275,7 +275,7 @@
         "coupon_type": "Gift"
       }
     ],
-    "shop_Link": "https://www.traveltrek.com",
+    "shop_Link": "https://www.traveltrek.co.uk/",
     "category": "Travel",
     "isSaleOn": false
   }

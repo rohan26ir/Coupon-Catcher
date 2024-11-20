@@ -41,7 +41,7 @@ const Brand = ({ brand }) => {
       <div className="bg-base-100 shadow-xl p-10">
         <figure>
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            src={brand_logo}
             alt={`${brand_name} logo`}
             className="w-full h-72 object-cover"
           />
