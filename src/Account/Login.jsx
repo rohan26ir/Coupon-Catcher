@@ -77,9 +77,6 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center my-16 animate__animated animate__fadeIn">
-      <Helmet>
-        <title>Login - Coupon Catcher</title>
-      </Helmet>
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-none pt-4 animate__animated animate__bounceIn">
         <h2 className="text-center text-lg font-bold mx-auto py-6 border-b-[1px] border-gray-400 w-[80%] animate__animated animate__fadeInDown">
           Login to your account

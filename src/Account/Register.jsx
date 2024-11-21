@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { FcGoogle } from 'react-icons/fc';
 import Swal from 'sweetalert2';
-import { Helmet } from 'react-helmet';
+import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -108,6 +108,7 @@ const Register = () => {
       className="flex justify-center items-center mb-16 animate__animated animate__fadeIn"
       data-aos="fade-up"
     >
+
       <div
         className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-none pt-4"
         data-aos="zoom-in"
@@ -170,13 +171,15 @@ const Register = () => {
               className="input input-bordered"
               required
             />
-            <button
-              type="button"
+            <div
               onClick={() => setShowPassword(!showPassword)}
-              className="px-2 py-0 text-orange-500 bg-gray-700 absolute right-4 top-12 rounded-full cursor-pointer"
+              className="h-8 w-8 cursor-pointer text-orange-500 bg-gray-700 absolute right-4 top-12 rounded-full flex justify-center items-center"
+              aria-label={showPassword ? "Hide password" : "Show password"}
             >
-              {!showPassword ? "Show" : "Hide"}
-            </button>
+              <div className="text-xl">
+                {!showPassword ? <FaRegEye /> : <FaRegEyeSlash />}
+              </div>
+            </div>
             {passwordError && (
               <p
                 className="text-red-500 text-sm mt-1 animate__animated animate__shakeX"
