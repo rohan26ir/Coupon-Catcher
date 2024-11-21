@@ -29,9 +29,9 @@ const HomeLayout = () => {
         backgroundImage: `url(${banner1})`,
       }}
     >
-      <div className="flex justify-end w-[40%] ml-auto items-end p-4 text-white bg-black bg-opacity-50 rounded-bl-box">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-      </div>
+      {/* <div className="flex justify-end w-[40%] ml-auto items-end p-4 text-white bg-black bg-opacity-50 rounded-bl-box">
+        <h3>Up to 50% offer!</h3>
+      </div> */}
     </div>,
     <div
       className="bg-cover bg-center h-full"
@@ -39,9 +39,9 @@ const HomeLayout = () => {
         backgroundImage: `url(${banner2})`,
       }}
     >
-      <div className="flex justify-end w-[40%] ml-auto items-end p-4 text-white bg-black bg-opacity-50 rounded-bl-box">
+      {/* <div className="flex justify-end w-[40%] ml-auto items-end p-4 text-white bg-black bg-opacity-50 rounded-bl-box">
         <h3>Lorem ipsum dolor sit amet.</h3>
-      </div>
+      </div> */}
     </div>,
     <div
       className="bg-cover bg-center h-full"
@@ -49,9 +49,9 @@ const HomeLayout = () => {
         backgroundImage: `url(${banner3})`,
       }}
     >
-      <div className="flex justify-end w-[40%] ml-auto items-end p-4 text-white bg-black bg-opacity-50 rounded-bl-box">
+      {/* <div className="flex justify-end w-[40%] ml-auto items-end p-4 text-white bg-black bg-opacity-50 rounded-bl-box">
         <h3>Lorem ipsum dolor sit amet.</h3>
-      </div>
+      </div> */}
     </div>,
     <div
       className="bg-cover bg-center h-full"
@@ -59,9 +59,9 @@ const HomeLayout = () => {
         backgroundImage: `url(${banner4})`,
       }}
     >
-      <div className="flex justify-end w-[40%] ml-auto items-end p-4 text-white bg-black bg-opacity-50 rounded-bl-box">
+      {/* <div className="flex justify-end w-[40%] ml-auto items-end p-4 text-white bg-black bg-opacity-50 rounded-bl-box">
         <h3>Lorem ipsum dolor sit amet.</h3>
-      </div>
+      </div> */}
     </div>,
   ];
 

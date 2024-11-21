@@ -4,7 +4,7 @@ import TopBDetails from "../Cards/TopBDetails";
 
 const TopBrand = ({ datas }) => {
 
-  console.log(datas);
+  // console.log(datas);
 
   return (
     <div>

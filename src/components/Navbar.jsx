@@ -18,7 +18,7 @@ const Navbar = () => {
     <div>
       <div className="navbar bg-[#B2D9EA] px-5">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown  z-40">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,23 +39,20 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <div className="flex items-center md:gap-3">
+              <div className="flex items-center md:gap-3  z-50">
                 <li>
                   <NavLink to={"/"}><FaHome></FaHome> Home</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/about"}><FcAbout></FcAbout> About Dev</NavLink>
                 </li>
-                <li>
-                  <NavLink to={"/contact"}>Contact</NavLink>
-                </li>
                 {user && (
-                  <li>
+                  <li className="bg-white py-3 mx-3 px-3 rounded-3xl">
                     <NavLink to={"/brands"}><SiBrandfolder></SiBrandfolder> Brands</NavLink>
                   </li>
                 )}
                 {user && (
-                  <li>
+                  <li className="bg-white py-3 mx-3 px-3 rounded-3xl">
                     <NavLink to={"/my-profile"}><CgProfile></CgProfile> My Profile</NavLink>
                   </li>
                 )}

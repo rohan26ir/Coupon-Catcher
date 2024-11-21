@@ -4,6 +4,7 @@ import { AuthContext } from '../AuthProvider/AuthProvider';
 import { FcGoogle } from 'react-icons/fc';
 import Swal from 'sweetalert2';
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -104,68 +105,39 @@ const Register = () => {
   };
 
   return (
-    <div
-      className="flex justify-center items-center mb-16 animate__animated animate__fadeIn"
-      data-aos="fade-up"
-    >
-
-      <div
-        className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-none pt-4"
-        data-aos="zoom-in"
-      >
-        <h2
-          className="text-center text-lg font-bold mx-auto py-6 border-b-[1px] border-gray-400 w-[80%] animate__animated animate__fadeInDown"
-          data-aos="fade-down"
-        >
+    <div className="flex justify-center items-center mb-16">
+      <Helmet>
+        <title>Register - Coupon Catcher</title>
+      </Helmet>
+      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-none pt-4">
+        <h2 className="text-center text-lg font-bold mx-auto py-6 border-b-[1px] border-gray-400 w-[80%]">
           Register your account
         </h2>
-        <form
-          onSubmit={handleRegister}
-          className="card-body"
-          data-aos="fade-up"
-        >
-          <div className="form-control" data-aos="fade-right">
+        <form onSubmit={handleRegister} className="card-body">
+          <div className="form-control">
             <label className="label">
               <span className="label-text">Your Name</span>
             </label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              className="input input-bordered"
-              required
-            />
+            <input type="text" name="name" placeholder="Enter your name" className="input input-bordered" required />
           </div>
-          <div className="form-control" data-aos="fade-left">
+          <div className="form-control">
             <label className="label">
               <span className="label-text">Photo URL</span>
             </label>
-            <input
-              type="text"
-              name="photoUrl"
-              placeholder="Enter your photo URL"
-              className="input input-bordered"
-              required
-            />
+            <input type="text" name="photoUrl" placeholder="Enter your photo URL" className="input input-bordered" required />
           </div>
-          <div className="form-control" data-aos="fade-right">
+          <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
             </label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              className="input input-bordered"
-              required
-            />
+            <input type="email" name="email" placeholder="Enter your email" className="input input-bordered" required />
           </div>
-          <div className="form-control relative" data-aos="fade-left">
+          <div className="form-control relative">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
             <input
-              type={showPassword ? "text" : "password"}
+              type={showPassword ? 'text' : 'password'}
               name="password"
               placeholder="Enter your password"
               className="input input-bordered"
@@ -181,37 +153,25 @@ const Register = () => {
               </div>
             </div>
             {passwordError && (
-              <p
-                className="text-red-500 text-sm mt-1 animate__animated animate__shakeX"
-              >
-                {passwordError}
-              </p>
+              <p className="text-red-500 text-sm mt-1">{passwordError}</p>
+              
             )}
           </div>
-          <div className="form-control mt-6" data-aos="zoom-in">
-            <button type="submit" className="btn btn-neutral rounded-none animate__animated animate__pulse">
+          <div className="form-control mt-6">
+            <button type="submit" className="btn btn-neutral rounded-none">
               Register
             </button>
           </div>
           <div>
-            <p
-              className="text-sm text-center py-3"
-              data-aos="fade-up"
-            >
-              Already have an account?{" "}
-              <Link to={"/login"}>
-                <span className="text-red-600">Login here</span>
-              </Link>
-            </p>
+          <p className="text-sm text-center py-3">
+            Already have an account?{" "}
+            <Link to={'/login'}>
+            <span className="text-red-600">Login here</span>
+            </Link>
+          </p>
           </div>
-          <div
-            className="form-control"
-            data-aos="zoom-in"
-          >
-            <div
-              onClick={handleSignInGoogle}
-              className="btn btn-neutral rounded-none flex items-center gap-2 justify-center animate__animated animate__tada"
-            >
+          <div className="form-control">
+            <div onClick={handleSignInGoogle} className="btn btn-neutral rounded-none">
               <FcGoogle /> Log in with Google
             </div>
           </div>
@@ -219,7 +179,6 @@ const Register = () => {
       </div>
     </div>
   );
-  
 };
 
 export default Register;

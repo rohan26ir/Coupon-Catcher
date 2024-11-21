@@ -22,7 +22,8 @@ const Brand = ({ brand }) => {
     category
   } = brand;
 
-  console.log("Is true or not:", isSaleOn);
+  // console.log("Is true or not:", isSaleOn);
+
   const navigate = useNavigate();
 
   const { user } = useContext(AuthContext);

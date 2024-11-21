@@ -1,21 +1,17 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-// Import required Swiper modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import '../CSS/slider.css'; // Custom styles for the slider
+import '../CSS/slider.css';
 
 const Slider = ({ slides, autoplayDelay = 2500 }) => {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
 
-  // Function to handle autoplay progress
   const onAutoplayTimeLeft = (swiper, time, progress) => {
     if (progressCircle.current) {
       progressCircle.current.style.setProperty('--progress', 1 - progress);

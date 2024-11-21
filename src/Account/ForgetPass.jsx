@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const ForgetPass = () => {
   const { handleForgetPass } = useContext(AuthContext);
@@ -42,6 +43,9 @@ const ForgetPass = () => {
 
   return (
     <div className="flex justify-center items-center my-10">
+      <Helmet>
+        <title>Forget Password - Coupon Catcher</title>
+      </Helmet>
       <div className="card bg-base-100 w-full max-w-sm shadow-2xl rounded-none p-6">
         <h2 className="text-center text-lg font-bold">Reset Password</h2>
         <form onSubmit={handleResetPassword} className="mt-4">
