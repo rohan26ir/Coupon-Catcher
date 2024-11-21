@@ -6,8 +6,21 @@ import banner1 from "../assets/banner02.jpg";
 import banner2 from "../assets/banner04.png";
 import banner3 from "../assets/banner02.jpg";
 import banner4 from "../assets/banner05.jpg";
+import { useEffect, useState } from "react";
+import BrandsonSell from "../components/BrandsonSell";
 
 const HomeLayout = () => {
+
+  const [datas, setDatas] = useState([])
+
+  useEffect(() => {
+    fetch("./coupon.json")
+     .then(res => res.json())
+     .then(data => setDatas(data))
+  }, [])
+
+  // console.log(datas);
+
   const slides = [
     <div
       className="relative bg-cover bg-center h-full"
@@ -60,7 +73,10 @@ const HomeLayout = () => {
         <HomeCard></HomeCard>
       </div>
       <div>
-        <TopBrand></TopBrand>
+        <TopBrand datas={datas}></TopBrand>
+      </div>
+      <div>
+        <BrandsonSell datas={datas}></BrandsonSell>
       </div>
     </div>
   );

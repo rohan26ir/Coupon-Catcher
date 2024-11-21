@@ -36,9 +36,9 @@ const Brand = ({ brand }) => {
   };
 
   return (
-    <div className=" border-2 border-red-600 w-[80%]">
+    <div className=" border-2 border-gray-200 rounded-2xl w-[80%]">
       {/* Card Section */}
-      <div className="bg-base-100 shadow-xl p-10">
+      <div className="bg-white rounded-2xl shadow-xl p-10">
         <figure>
           <img
             src={brand_logo}

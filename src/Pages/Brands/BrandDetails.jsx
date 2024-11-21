@@ -15,8 +15,8 @@ const BrandDetails = () => {
   }
 
   return (
-    <div className="w-11/12 my-5 mx-auto border-2 rounded-2xl">
-      <div className=" p-5 my-5 rounded-2xl  bg-white">
+    <div className="w-11/12 my-5 mx-auto rounded-2xl">  
+      <div className=" p-5 my-5 rounded-2xl border-2  bg-gradient-to-r from-[#FFFFFF] to-[#F0F4F8]">
         <div className="flex justify-center items-center my-2 mx-auto w-[80%]">
           <img
             className="h-40 "
