@@ -1,18 +1,19 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import AboutHero from '../components/About/AboutHero';
 import AboutContact from '../components/About/AboutContact';
 import AboutEducation from '../components/About/AboutEducation';
 import Marquee from 'react-fast-marquee';
 import manWalk from '../assets/man-walk.gif'
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   return (
     <div className=' bg-gradient-to-b from-blue-50 via-blue-100 to-blue-200 p-12'>
+ 
+
       <Helmet>
-        <title>About Dev | Coupons Catcher</title>
+        <title>About - Coupon Catcher</title>
       </Helmet>
-      
       <main>
         <AboutHero></AboutHero>
 

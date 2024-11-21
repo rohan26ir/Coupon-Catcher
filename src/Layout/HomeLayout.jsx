@@ -8,6 +8,7 @@ import banner3 from "../assets/banner02.jpg";
 import banner4 from "../assets/banner05.jpg";
 import { useEffect, useState } from "react";
 import BrandsonSell from "../components/BrandsonSell";
+import { Helmet } from "react-helmet";
 
 const HomeLayout = () => {
 
@@ -66,6 +67,9 @@ const HomeLayout = () => {
 
   return (
     <div className="bg-[#2C3E50]">
+      <Helmet>
+        <title>Home - Coupon Catcher</title>
+      </Helmet>
       <div>
         <Slider slides={slides} autoplayDelay={3000} />
       </div>

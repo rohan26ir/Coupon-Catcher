@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Brand from "./Brand";
+import { Helmet } from "react-helmet";
 
 const Brands = () => {
 
@@ -12,19 +13,16 @@ const Brands = () => {
     .catch(error => (error))
   },[])
 
-  console.log("Brands:", brands);
 
-
-  // const {_id, brand_name} = brands;
-
-  // console.log("object::", _id, brand_name);
-  
   return (
       <div className="bg-gradient-to-r from-[#243B55] to-[#141E30]">
+        <Helmet>
+          <title>Brands - Coupon Catcher</title>
+        </Helmet>
       <div className=" p-4">
       <div className="flex justify-start items-center w-[82%] mx-auto">
         <div>
-          <label className="input  input-bordered w-[200%] flex items-center gap-2">
+          <label className="input  input-bordered w-[140%] md:w-[200%] flex items-center gap-2">
             <input type="text" className="grow" placeholder="Search" />
             <svg
               xmlns="http://www.w3.org/2000/svg"

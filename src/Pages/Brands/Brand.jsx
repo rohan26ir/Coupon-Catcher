@@ -43,7 +43,7 @@ const Brand = ({ brand }) => {
           <img
             src={brand_logo}
             alt={`${brand_name} logo`}
-            className="w-full h-72 object-cover"
+            className="w-full h-72 object-center md:object-cover"
           />
         </figure>
 
@@ -72,12 +72,13 @@ const Brand = ({ brand }) => {
           <div className="flex items-center">
             <div className="font-bold flex justify-between  text-xl items-center space-x-3"><BiCategory /> Category:</div> 
             
-            <div className="bg-gray-600 text-white px-4 py-1 rounded-3xl">{category}</div>
+            <div className="bg-gray-600 text-white px-4 py-1 ml-2 rounded-3xl">{category}</div>
             </div>
         </div>
 
         {/* View Coupons Button */}
-        <div className="card-actions justify-center mt-4">
+        <div className="flex justify-center mt-4">
+
           <button
             className={`btn border-2 cursor-default rounded-r-none pr-10 -mr-5 ${
               isSaleOn ? "text-green-600" : "hidden"
@@ -95,6 +96,7 @@ const Brand = ({ brand }) => {
           >
             <RiCoupon2Line /> View Coupon
           </button>
+
         </div>
       </div>
     </div>

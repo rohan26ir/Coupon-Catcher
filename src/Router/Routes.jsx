@@ -13,6 +13,7 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import UpdateProfile from '../Pages/UpdateProfile';
 import BrandDetails from '../Pages/Brands/BrandDetails';
 import ErrorPage from '../Pages/ErrorPage';
+import ForgetPass from '../Account/ForgetPass';
 
 const Routes = createBrowserRouter([
   {
@@ -60,11 +61,15 @@ const Routes = createBrowserRouter([
     children: [
       {
         path: 'login',
-        element: <Login /> // Unprotected
+        element: <Login /> 
       },
       {
         path: 'register',
         element: <Register />
+      },
+      {
+        path: 'forget-password',
+        element: <ForgetPass></ForgetPass>
       }
     ]
   }

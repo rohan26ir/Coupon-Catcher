@@ -23,7 +23,7 @@ const AboutContact = () => {
 
         {/* Right Section with Slide-Up Animation */}
         <div className="md:col-span-3" data-aos="slide-up">
-          <div className="flex gap-5 my-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-auto">
             {/* Form Inputs */}
             <div className="space-y-2">
               <label className="input input-bordered flex items-center gap-2">
@@ -38,7 +38,7 @@ const AboutContact = () => {
 
             {/* Message Textarea */}
             <div
-              className="textarea-container"
+              className="textarea-container w-[40%]"
               data-aos="flip-right"
               data-aos-delay="200"
             >

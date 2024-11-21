@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
 import auth from '../Firebase/FirebaseInit.config';
 
@@ -11,6 +11,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
   const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState("");
 
 
   // console.log(user);
@@ -52,6 +53,35 @@ const AuthProvider = ({ children }) => {
     return updateProfile(auth.currentUser, updatedData)
   }
 
+  // forget password
+  
+  // const handleForgetPass = (email) => {
+  //   if (!email) {
+  //     setErrorMessage("Please provide an email address.");
+  //     return;
+  //   }
+  
+  //   sendPasswordResetEmail(auth, email)
+  //     .then(() => {
+  //       Swal.fire({
+  //         position: "top-center",
+  //         icon: "success",
+  //         title: `Password reset email sent to ${email}.`,
+  //         showConfirmButton: false,
+  //         timer: 2000,
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       setErrorMessage(error.message);
+  //     });
+  // };
+  
+  const handleForgetPass = (email) => {
+    return sendPasswordResetEmail(auth, email); 
+  };
+  
+
+
   const authInfo = {
 
     user,
@@ -64,6 +94,8 @@ const AuthProvider = ({ children }) => {
     updateUserProfile,
     message,
     setMessage,
+    handleForgetPass,
+    errorMessage,
   }
 
 

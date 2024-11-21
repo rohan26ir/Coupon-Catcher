@@ -60,16 +60,7 @@ const AboutHero = () => {
         </div>
 
         {/* Right Section */}
-        <div
-          className='flex justify-center items-center'
-          data-aos='zoom-in'
-          data-aos-delay='200'
-        >
-          <img
-            className='h-80 bg-blue-500 rounded-full p-3 shadow-lg'
-            src={rohan}
-            alt="Rohan"
-          />
+        <div>
         </div>
       </div>
     </div>

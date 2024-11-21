@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Swal from "sweetalert2";
+import "animate.css";
 
 const UpdateProfile = () => {
   const { user, message, setMessage, updateUserProfile } = useContext(AuthContext);
@@ -37,7 +38,7 @@ const UpdateProfile = () => {
         });
 
         setTimeout(() => {
-          setMessage("")
+          setMessage("");
           navigate("/my-profile");
         }, 1600);
       })
@@ -59,11 +60,13 @@ const UpdateProfile = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-[#2C3E50] py-16">
-        <div className="bg-white bg-opacity-30 mt-2 max-w-md w-full mx-auto pb-5 rounded-lg p-5">
-          <h2 className="text-center text-2xl font-bold">Update Profile</h2>
+      <div className="bg-[#2C3E50] py-16 ">
+        <div className="bg-white bg-opacity-30 mt-2 max-w-md w-full mx-auto pb-5 rounded-lg p-5 animate__animated animate__zoomIn">
+          <h2 className="text-center text-2xl font-bold animate__animated animate__fadeIn">
+            Update Profile
+          </h2>
           <form onSubmit={handleUpdate}>
-            <div className="form-control">
+            <div className="form-control animate__animated animate__fadeInLeft">
               <label className="label">
                 <span className="label-text">Name</span>
               </label>
@@ -77,7 +80,7 @@ const UpdateProfile = () => {
               />
             </div>
 
-            <div className="form-control">
+            <div className="form-control animate__animated animate__fadeInRight">
               <label className="label">
                 <span className="label-text">Photo URL</span>
               </label>
@@ -91,7 +94,7 @@ const UpdateProfile = () => {
               />
             </div>
 
-            <div className="form-control mt-6">
+            <div className="form-control mt-6 animate__animated animate__pulse">
               <button className="btn btn-primary">Update Profile</button>
             </div>
           </form>
@@ -99,7 +102,7 @@ const UpdateProfile = () => {
             <p
               className={`text-center mt-4 ${
                 message.includes("successfully") ? "text-green-600" : "text-red-600"
-              }`}
+              } animate__animated animate__fadeInUp`}
             >
               {message}
             </p>
