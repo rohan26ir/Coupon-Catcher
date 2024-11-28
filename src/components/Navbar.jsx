@@ -5,6 +5,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 import { FcAbout } from "react-icons/fc";
 import { SiBrandfolder } from "react-icons/si";
 import { CgProfile } from "react-icons/cg";
+import { RiCoupon2Fill } from "react-icons/ri";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -59,26 +60,23 @@ const Navbar = () => {
               </div>
             </ul>
           </div>
-          <Link to="/" className="flex text-xl font-bold ">
-            Coupon Catcher
+          <Link to="/" className="flex text-xl font-bold justify-center items-center">
+           <span className="mr-1 text-rose-600 "><RiCoupon2Fill /></span> <span className="mr-1 text-orange-600">Coupon</span> Catcher
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <div className="flex items-center gap-3">
-              {user && (
+
                 <li>
                   <NavLink to={"/"}> <FaHome></FaHome>Home</NavLink>
                 </li>
-              )}
               <li>
                 <NavLink to={"/about"}><FcAbout></FcAbout> About Dev</NavLink>
               </li>
-              {user && (
                 <li>
                   <NavLink to={"/brands"}><SiBrandfolder></SiBrandfolder> Brands</NavLink>
                 </li>
-              )}
               {user && (
                 <li>
                   <NavLink to={"/my-profile"}><CgProfile></CgProfile> My Profile</NavLink>

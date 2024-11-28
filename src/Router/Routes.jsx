@@ -23,7 +23,7 @@ const Routes = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <PrivateRoute><HomeLayout /></PrivateRoute> // Protected
+        element: <HomeLayout></HomeLayout>
       },
       {
         path: '/about',
@@ -35,7 +35,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: '/brands',
-        element: <PrivateRoute><Brands /></PrivateRoute>,
+        element: <Brands></Brands>
       },
       {
         path: '/brand-details/:id', // New Route for BrandDetails

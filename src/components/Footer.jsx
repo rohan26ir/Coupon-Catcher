@@ -21,7 +21,7 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">Social</h6>
           <div className="grid grid-flow-col gap-4">
-            <a>
+            <a href="https://x.com/rohan26ir">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

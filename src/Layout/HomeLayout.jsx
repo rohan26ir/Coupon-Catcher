@@ -9,6 +9,7 @@ import banner4 from "../assets/banner05.jpg";
 import { useEffect, useState } from "react";
 import BrandsonSell from "../components/BrandsonSell";
 import { Helmet } from "react-helmet";
+import FAQ from "../components/Home/FAQ";
 
 const HomeLayout = () => {
 
@@ -81,6 +82,9 @@ const HomeLayout = () => {
       </div>
       <div>
         <BrandsonSell datas={datas}></BrandsonSell>
+      </div>
+      <div>
+        <FAQ></FAQ>
       </div>
     </div>
   );
