@@ -1,7 +1,5 @@
 # Coupon Catcher: A Coupon Collecting Application
 
-## Assignment Category: 005
-
 ## Project Overview
 
 **Coupon Catcher** is a Coupon Collecting Application designed to help users find and use discount coupons for popular e-commerce stores in Bangladesh. The application collects all available coupons from various e-commerce platforms, enabling users to easily access discount codes, save money, and enjoy various promotional offers.
